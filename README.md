@@ -122,13 +122,3 @@ GROBID XML is saved under `Data/grobid_output`. Extracted text is saved under
 ```bash
 python3 data_clean.py
 ```
-
-## Processing notes
-
-- Searching, DOI deduplication, downloading, GROBID conversion, and cleaning are
-  separate steps. `main.py` does not run all of them automatically.
-- Set only one of `Metric` and `Full` to `True` at a time. If both are
-  `True`, `Metric` takes precedence.
-- Output folders are created under `Data/` as each step runs.
-- Do not commit API keys, publisher credential files, or other secrets to the
-  repository.
